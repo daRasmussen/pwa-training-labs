@@ -17,7 +17,12 @@ limitations under the License.
   'use strict';
 
   // TODO - 3.1: Add install and activate event listeners
-
+  self.addEventListener('install', function(e){
+    console.log('Service worker installing ...');
+  });
+  self.addEventListener('activate', function(e){
+    console.log('Service worker activating ...');
+  });
   // TODO - 3.3: Add a comment to change the service worker
 
   // TODO - 4: Add fetch listener
